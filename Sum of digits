@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    int n,d,num,sum=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter a 5-digit number:");
+	    num=sc.nextInt();
+	    n=num;
+	    while(n>0)
+	    {
+	        d=n%10;
+	        sum=sum+d;
+	        n=n/10;
+	    }
+		System.out.println("Sum of digits is: "+sum);
+	}
+}
